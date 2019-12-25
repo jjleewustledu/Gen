@@ -1,0 +1,71 @@
+digraph {
+	ts [label=ts fillcolor=white shape=diamond style=filled]
+	"##403" [label="##403" fillcolor=white shape=box style=filled]
+	"##405" [label="##405" fillcolor=white shape=box style=filled]
+	"Gen.Gamma() sk1 k1" [label="Gen.Gamma() sk1 k1" fillcolor=white shape=ellipse style=filled]
+	"##403" -> "Gen.Gamma() sk1 k1"
+	"##405" -> "Gen.Gamma() sk1 k1"
+	"##409" [label="##409" fillcolor=white shape=box style=filled]
+	"##411" [label="##411" fillcolor=white shape=box style=filled]
+	"Gen.Gamma() sk2 k2" [label="Gen.Gamma() sk2 k2" fillcolor=white shape=ellipse style=filled]
+	"##409" -> "Gen.Gamma() sk2 k2"
+	"##411" -> "Gen.Gamma() sk2 k2"
+	"##415" [label="##415" fillcolor=white shape=box style=filled]
+	"##417" [label="##417" fillcolor=white shape=box style=filled]
+	"Gen.Gamma() sk3 k3" [label="Gen.Gamma() sk3 k3" fillcolor=white shape=ellipse style=filled]
+	"##415" -> "Gen.Gamma() sk3 k3"
+	"##417" -> "Gen.Gamma() sk3 k3"
+	"##421" [label="##421" fillcolor=white shape=box style=filled]
+	"##423" [label="##423" fillcolor=white shape=box style=filled]
+	"Gen.UniformContinuous() sk4 k4" [label="Gen.UniformContinuous() sk4 k4" fillcolor=white shape=ellipse style=filled]
+	"##421" -> "Gen.UniformContinuous() sk4 k4"
+	"##423" -> "Gen.UniformContinuous() sk4 k4"
+	"##427" [label="##427" fillcolor=white shape=box style=filled]
+	"##429" [label="##429" fillcolor=white shape=box style=filled]
+	"Gen.UniformContinuous() st0 t0" [label="Gen.UniformContinuous() st0 t0" fillcolor=white shape=ellipse style=filled]
+	"##427" -> "Gen.UniformContinuous() st0 t0"
+	"##429" -> "Gen.UniformContinuous() st0 t0"
+	"##433" [label="##433" fillcolor=white shape=box style=filled]
+	"##435" [label="##435" fillcolor=white shape=box style=filled]
+	"Gen.Gamma() snoise noise" [label="Gen.Gamma() snoise noise" fillcolor=white shape=ellipse style=filled]
+	"##433" -> "Gen.Gamma() snoise noise"
+	"##435" -> "Gen.Gamma() snoise noise"
+	"##439" [label="##439" fillcolor=white shape=box style=filled]
+	"##441" [label="##441" fillcolor=white shape=box style=filled]
+	"Gen.UniformContinuous() sprob_outlier prob_outlier" [label="Gen.UniformContinuous() sprob_outlier prob_outlier" fillcolor=white shape=ellipse style=filled]
+	"##439" -> "Gen.UniformContinuous() sprob_outlier prob_outlier"
+	"##441" -> "Gen.UniformContinuous() sprob_outlier prob_outlier"
+	n [label=n fillcolor=white shape=box style=filled]
+	ts -> n
+	"##448" [label="##448" fillcolor=white shape=box style=filled]
+	n -> "##448"
+	"Gen.Gamma() sk1 k1" -> "##448"
+	"##450" [label="##450" fillcolor=white shape=box style=filled]
+	n -> "##450"
+	"Gen.Gamma() sk2 k2" -> "##450"
+	"##452" [label="##452" fillcolor=white shape=box style=filled]
+	n -> "##452"
+	"Gen.Gamma() sk3 k3" -> "##452"
+	"##454" [label="##454" fillcolor=white shape=box style=filled]
+	n -> "##454"
+	"Gen.UniformContinuous() sk4 k4" -> "##454"
+	"##456" [label="##456" fillcolor=white shape=box style=filled]
+	n -> "##456"
+	"Gen.UniformContinuous() st0 t0" -> "##456"
+	"##458" [label="##458" fillcolor=white shape=box style=filled]
+	n -> "##458"
+	"Gen.Gamma() snoise noise" -> "##458"
+	"##460" [label="##460" fillcolor=white shape=box style=filled]
+	n -> "##460"
+	"Gen.UniformContinuous() sprob_outlier prob_outlier" -> "##460"
+	"sdata ##444" [label="sdata ##444" fillcolor=white shape=star style=filled]
+	ts -> "sdata ##444"
+	"##448" -> "sdata ##444"
+	"##450" -> "sdata ##444"
+	"##452" -> "sdata ##444"
+	"##454" -> "sdata ##444"
+	"##456" -> "sdata ##444"
+	"##458" -> "sdata ##444"
+	"##460" -> "sdata ##444"
+	"##463" [label="##463" fillcolor=lightblue shape=box style=filled]
+}

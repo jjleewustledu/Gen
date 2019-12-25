@@ -16,7 +16,7 @@ RUN             git config --global user.name "John J. Lee"
 RUN             git config --global user.email "16329959+jjleewustledu@users.noreply.github.com"
 
 RUN             virtualenv -p /usr/bin/python3 /venv
-RUN             . /venv/bin/activate && pip install jupyter jupytext matplotlib
+RUN             . /venv/bin/activate && pip install jupyter jupytext matplotlibp graphviz
 
 RUN             mkdir /julia
 RUN             mkdir /julia/gpghome
